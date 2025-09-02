@@ -1,10 +1,18 @@
- body {     
+body {     
     overflow-x: hidden;  
-    font-family:'Roboto', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: black;
     line-height:1.2em;
     font-size:17px;
     line-height:20px;
+}
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -201,6 +209,7 @@
        /* -------------------------------------------------------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    text-transform: none;
 }
 h2{
     color:yellow;
@@ -215,6 +224,7 @@ p {
     padding: 10px;
     font-weight: 100;
     color: #fff;
+    text-align: justify;
 }
 .navbar {
     background: #000000;
@@ -239,7 +249,7 @@ p {
     height:40px;
 }
 .navbar .nav > li > a {
-    text-transform:uppercase;
+    text-transform: none;
     line-height: auto;
     vertical-align: middle;
     margin:10px 3px;
@@ -801,7 +811,7 @@ p {
 }
 .price-column h3 {
     background-color:#000000;
-    text-transform:uppercase;
+    text-transform: none;
     text-align: center;
     color:#2E2E2E;
     padding:40px 0px;
@@ -1080,43 +1090,4 @@ p {
     .price-column, .testimonial {
         margin-top:30px;
     }
-}
-
-table{
-         text-align:center;
-         font-family: arial black;
-         font-size:0.9em;
-         color:#fff;
-         width: 100%;
-}
-.datos{
-           width:95.5%;
-           background-color:#2E2E2E;
-           font-family: arial black;
-           font-size:1em;
-           color:#fff;
-           border: 1px solid black;
-}
-.datos_{
-           background-color:#2E2E2E;
-          font-family: arial black;
-           font-size:1em;
-           color:#fff;
-           cursor: pointer;
-           border: 1px solid black;
-           border-radius: 0.25em;
-}
-.datos_:hover{
-          color:#fff;
-          background-color:black;
-          border: 1px solid black;
-          border-radius: 0.25em;
-}
-textarea{
-           width:95.5%;
-           background-color:#2E2E2E;
-          font-family: arial black;
-           font-size:1em;
-           color:#fff;
-           border: 1px solid black;
 }
