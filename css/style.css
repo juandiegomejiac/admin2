@@ -1,4 +1,4 @@
-/* Fondo general: degradado continuo en todo el ancho */
+/* Fondo general: degradado continuo en todo el ancho */ 
 html, body {
     width: 100%;
     min-height: 100%;
@@ -20,9 +20,9 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
     #fixed-canvas {
-        width: 1200px;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
+        width: 1366px;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
     }
 }
 
