@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="DPg7f5uW8ffqsV7jKRZ4mwf2h70dJiimGTX_UJi8lko">
-    <!-- Se elimina el meta viewport para evitar responsividad en móviles -->
+    <!-- Sin meta viewport para impedir responsividad móvil nativa -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="description" content="Bienvenidos a mi sitio web, aqui encontraras mi portafolio de diseño, en el cual veras algunos de mis trabajos y la forma en que los hago, tanto en área gráfica, web, arquitectonica y 3D.">
     <meta name="robots" content="index,follow">
@@ -12,12 +12,11 @@
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Open Sans con todos los pesos -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Se deshabilita bootstrap-responsive para evitar colapso y cambios en móvil -->
+    <!-- Desactivado CSS responsive de bootstrap -->
     <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pluton.css">
@@ -28,7 +27,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Iconos y favicon (rutas originales) -->
+    <!-- Iconos y favicon -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
@@ -65,15 +64,14 @@
       img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
         display: none !important;
       }
-      /* Evitar que el botón hamburguesa aparezca como colapsable en móviles */
+      /* Menú siempre expandido */
       .btn.btn-navbar { display: none !important; }
       .nav-collapse.collapse { height: auto !important; overflow: visible !important; }
     </style>
   </head>
   <body>
-    <!-- Contenedor fijo para mantener el mismo ancho en todos los dispositivos -->
+    <!-- Lienzo principal -->
     <div id="fixed-canvas">
-
       <!-- Navbar -->
       <div class="navbar" role="navigation" aria-label="Navegación principal">
         <div class="navbar-inner">
@@ -81,7 +79,6 @@
             <a href="#" class="brand" aria-label="Inicio">
               <img src="images/logo.png" width="120" height="40" alt="Logo" class="imglogo">
             </a>
-            <!-- Botón de menú deshabilitado (no colapsa) -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" aria-label="Abrir menú">
               <i class="icon-menu" aria-hidden="true"></i>
             </button>
@@ -241,6 +238,7 @@
           </ul>
 
           <div id="single-project">
+            <!-- Proyectos (sin cambios estructurales) -->
             <div id="slidingDiv" class="toggleDiv row-fluid single-project" aria-live="polite">
               <div class="span6">
                 <img src="images/Portfolio01.png" alt="project 1">
@@ -448,6 +446,7 @@
               </div>
             </div>
 
+            <!-- Grid -->
             <ul id="portfolio-grid" class="thumbnails row">
               <li class="span4 mix web">
                 <div class="thumbnail">
@@ -844,7 +843,6 @@
               <p>En está página haz visto algunos de mis trabajos y la forma en que los hago, tengo muchos más proyectos para ver, visita las demas webs que están en algunos botones que a lo largo de toda la página encontrarás.</p>
             </div>
             <center>
-              <!-- Reemplazo: contenedor con scroll en vez de iframe para mantener ancho fijo -->
               <div class="carrusel-contenedor" role="region" aria-label="Galería carrusel">
                 <iframe id="carrusel" src="galeria/slide_galeria_carrusel.html" align="center" width="900" height="150" scrolling="no" name="Frame_Nombre" frameborder="0" title="Galería carrusel"></iframe>
               </div>
@@ -917,8 +915,7 @@
           <i class="icon-up-open" aria-hidden="true"></i>
         </a>
       </div>
-
-    </div><!-- /#fixed-canvas -->
+    </div>
 
     <!-- JS locales -->
     <script src="js/jquery.js"></script>
@@ -930,7 +927,7 @@
     <script src="js/jquery.placeholder.js"></script>
     <script src="js/jquery.inview.js"></script>
 
-    <!-- Google Maps API (manteniendo callback por compatibilidad) -->
+    <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initializeMap"></script>
 
     <!--[if lt IE 9]>
@@ -939,7 +936,7 @@
 
     <script src="js/app.js"></script>
 
-    <!-- Modal de inicio -->
+    <!-- Modal -->
     <div class="contenedor">
       <div class="modal fade" id="modalInicio" role="dialog" style="border-radius: 2em;">
         <div class="modal-dialog">
@@ -964,19 +961,16 @@
       </div>
     </div>
 
-    <!-- Mostrar modal si backend define la variable (se conserva lógica PHP original) -->
     <?php if(isset($exibirModal) && $exibirModal === true) : ?>
     <script>
       $(function(){ $("#modalInicio").modal("show"); });
     </script>
     <?php endif; ?>
 
-    <!-- Audio (manteniendo ruta y autoplay) -->
     <audio autoplay src="galeria/tono.mp3">
       <source src="galeria/tono.mp3" type="audio/mp3">
     </audio>
 
-    <!-- Animación barras skills -->
     <script>
       (function ($) {
         $(function () {
@@ -991,7 +985,6 @@
               }
             });
           }
-          // Llenar siempre (sin depender de inview) para layout fijo
           fillBars();
         });
       })(jQuery);
