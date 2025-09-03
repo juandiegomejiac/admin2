@@ -13,31 +13,17 @@ body {
     background: linear-gradient(#000, #2E2E2E, #2E2E2E, #2E2E2E, #000) fixed;
 }
 
-/* ---------------------------------------------------- /
-/ Diseño Responsivo /
-/ ---------------------------------------------------- */
-
-/*
-
-Estilos base (Mobile-First): Se aplican por defecto a todas las pantallas.
-
-En este caso, el lienzo ocupa el 100% del ancho.
-*/
+/* Lienzo principal:
+   - En escritorio: 100% de ancho (fluido)
+   - En móvil/angosto: ancho fijo para preservar layout original, con scroll horizontal */
 #fixed-canvas {
-width: 100%;
-margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
-
-/*
-
-Media Query para Escritorio: Estos estilos SÓLO se aplican cuando el
-
-ancho de la pantalla es igual o mayor a 768px (pantallas grandes).
-/
-@media (min-width: 768px) {
-#fixed-canvas {
-width: 90%; / Ancho al 90% para escritorio */
-}
+@media (max-width: 100%) {
+    #fixed-canvas {
+        width: 100%;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
+    }
 }
 
 /* Scrollbar (WebKit) */
