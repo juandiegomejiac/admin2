@@ -20,9 +20,9 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-@media (max-width: 1080px) {
+@media (max-width: 100%) {
     #fixed-canvas {
-        width: 1080px;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
+        width: 100%;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
     }
 }
 
