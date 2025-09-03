@@ -16,16 +16,14 @@ body {
 /* Lienzo principal:
    - En escritorio: 100% de ancho (fluido)
    - En móvil/angosto: ancho fijo para preservar layout original, con scroll horizontal */
-/* Lienzo principal: 90% en escritorio, 100% en móviles */
-#fixed-canvas{
-  width: 90vw;
-  margin: 0 auto;
+#fixed-canvas {
+    width: 100%;
+    margin: 0 auto;
 }
-
-@media (max-width: 991px){
-  #fixed-canvas{
-    width: 100vw; /* llena el ancho del dispositivo */
-  }
+@media (max-width: 100%) {
+    #fixed-canvas {
+        width: 100%;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
+    }
 }
 
 /* Scrollbar (WebKit) */
