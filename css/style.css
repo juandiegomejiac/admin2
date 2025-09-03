@@ -415,3 +415,17 @@ p { padding: 10px; font-weight: 100; color: #fff; text-align: justify; }
     overflow-y: hidden;
     margin: 0 auto;
 }
+/* Sobrescribir Bootstrap .container para que se adapte */
+.container {
+  width: 90% !important;    /* 90% en escritorio */
+  max-width: 1600px;        /* opcional: limita en pantallas muy grandes */
+  margin: 0 auto;           /* centrado */
+}
+
+/* En móviles, el container debe ocupar 100% */
+@media (max-width: 991px) {
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
