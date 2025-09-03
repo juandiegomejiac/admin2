@@ -13,18 +13,22 @@ body {
     background: linear-gradient(#000, #2E2E2E, #2E2E2E, #2E2E2E, #000) fixed;
 }
 
-/* Lienzo principal:
-   - En escritorio: 100% de ancho (fluido)
-   - En móvil/angosto: ancho fijo para preservar layout original, con scroll horizontal */
+/* Estilos por defecto (mobile-first) */
 #fixed-canvas {
     width: 100%;
     margin: 0 auto;
 }
-@media (max-width: 100%) {
+
+/* ---------------------------------- */
+
+/* Reglas para pantallas de escritorio (PC) */
+@media (min-width: 768px) {
     #fixed-canvas {
-        width: 100%;     /* fija el ancho cuando la pantalla es menor, así no se apilan elementos */
+        width: 90%; /* Ajusta al 90% en PC */
     }
 }
+
+/* ---------------------------------- */
 
 /* Scrollbar (WebKit) */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
