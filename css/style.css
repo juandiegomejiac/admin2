@@ -1,10 +1,19 @@
  body {     
     overflow-x: hidden;  
-    font-family:'Roboto', sans-serif;
+    font-family:"Open Sans", sans-serif, 'Roboto', sans-serif, arial black;
     color: black;
     line-height:1.2em;
     font-size:17px;
     line-height:20px;
+}
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -215,6 +224,7 @@ p {
     padding: 10px;
     font-weight: 100;
     color: #fff;
+    text-align: justify;
 }
 .navbar {
     background: #000000;
@@ -239,7 +249,7 @@ p {
     height:40px;
 }
 .navbar .nav > li > a {
-    text-transform:uppercase;
+    text-transform:none;
     line-height: auto;
     vertical-align: middle;
     margin:10px 3px;
@@ -801,7 +811,7 @@ p {
 }
 .price-column h3 {
     background-color:#000000;
-    text-transform:uppercase;
+    text-transform:none;
     text-align: center;
     color:#2E2E2E;
     padding:40px 0px;
