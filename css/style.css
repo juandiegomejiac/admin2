@@ -13,22 +13,32 @@ body {
     background: linear-gradient(#000, #2E2E2E, #2E2E2E, #2E2E2E, #000) fixed;
 }
 
-/* Estilos por defecto (mobile-first) */
+/* ---------------------------------------------------- /
+/ Diseño Responsivo /
+/ ---------------------------------------------------- */
+
+/*
+
+Estilos base (Mobile-First): Se aplican por defecto a todas las pantallas.
+
+En este caso, el lienzo ocupa el 100% del ancho.
+*/
 #fixed-canvas {
-    width: 100%;
-    margin: 0 auto;
+width: 100%;
+margin: 0 auto;
 }
 
-/* ---------------------------------- */
+/*
 
-/* Reglas para pantallas de escritorio (PC) */
+Media Query para Escritorio: Estos estilos SÓLO se aplican cuando el
+
+ancho de la pantalla es igual o mayor a 768px (pantallas grandes).
+/
 @media (min-width: 768px) {
-    #fixed-canvas {
-        width: 90%; /* Ajusta al 90% en PC */
-    }
+#fixed-canvas {
+width: 90%; / Ancho al 90% para escritorio */
 }
-
-/* ---------------------------------- */
+}
 
 /* Scrollbar (WebKit) */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
