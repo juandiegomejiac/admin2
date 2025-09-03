@@ -16,16 +16,15 @@ body {
 /* Lienzo principal:
    - En escritorio: 100% de ancho (fluido)
    - En móvil/angosto: ancho fijo para preservar layout original, con scroll horizontal */
-/* Escritorio (por defecto) */
-#fixed-canvas {
-  width: 90%;
+/* Lienzo principal: 90% en escritorio, 100% en móviles */
+#fixed-canvas{
+  width: 90vw;
   margin: 0 auto;
 }
 
-/* Versión móvil */
-@media (max-width: 768px) {
-  #fixed-canvas {
-    width: 100%;
+@media (max-width: 991px){
+  #fixed-canvas{
+    width: 100vw; /* llena el ancho del dispositivo */
   }
 }
 
