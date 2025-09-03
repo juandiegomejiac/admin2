@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="DPg7f5uW8ffqsV7jKRZ4mwf2h70dJiimGTX_UJi8lko">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Se elimina el meta viewport para evitar responsividad en móviles -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="description" content="Bienvenidos a mi sitio web, aqui encontraras mi portafolio de diseño, en el cual veras algunos de mis trabajos y la forma en que los hago, tanto en área gráfica, web, arquitectonica y 3D.">
     <meta name="robots" content="index,follow">
     <title>Portafolio Diseñador Web 2😎25</title>
@@ -16,7 +17,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <!-- Se deshabilita bootstrap-responsive para evitar colapso y cambios en móvil -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pluton.css">
     <!--[if IE 7]>
@@ -33,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
     <link rel="shortcut icon" href="images/ico/apple-touch-icon-57.png">
 
-    <!-- jQuery (según tu implementación) -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Desactivar menú contextual -->
@@ -41,7 +43,7 @@
       document.addEventListener('contextmenu', function (e) { e.preventDefault(); }, { passive: false });
     </script>
 
-    <!-- Google Analytics (manteniendo tus IDs) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111240388-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -63,849 +65,860 @@
       img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
         display: none !important;
       }
+      /* Evitar que el botón hamburguesa aparezca como colapsable en móviles */
+      .btn.btn-navbar { display: none !important; }
+      .nav-collapse.collapse { height: auto !important; overflow: visible !important; }
     </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="navbar" role="navigation" aria-label="Navegación principal">
-      <div class="navbar-inner">
-        <div class="container">
-          <a href="#" class="brand" aria-label="Inicio">
-            <img src="images/logo.png" width="120" height="40" alt="Logo" class="imglogo">
-          </a>
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" aria-label="Abrir menú">
-            <i class="icon-menu" aria-hidden="true"></i>
-          </button>
-          <div class="nav-collapse collapse pull-right">
-            <ul class="nav" id="top-navigation">
-              <li class="active"><a href="#home">Inicio</a></li>
-              <li><a href="#service">Servicios</a></li>
-              <li><a href="#portfolio">Portafolio</a></li>
-              <li><a href="#about">Diseños</a></li>
-              <li><a href="#clients">Trabajos</a></li>
-              <li><a href="#price">Programas</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Contenedor fijo para mantener el mismo ancho en todos los dispositivos -->
+    <div id="fixed-canvas">
 
-    <!-- Home -->
-    <center>
-      <div id="home" class="centro">
-        <div id="da-slider" class="da-slider" aria-label="Presentación">
-          <div class="triangle" aria-hidden="true"></div>
-          <div class="mask" aria-hidden="true"></div>
+      <!-- Navbar -->
+      <div class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="navbar-inner">
           <div class="container">
-            <div class="da-slide">
-              <h2 class="fittext2" style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Bienvenidos a mi Sitio Web 😀</h2>
-              <h4 style="color:gray; text-transform: none;">Juan Diego Mejia Contreras</h4>
-              <p>Profesional de la informática con más de 10 años de experiencia en sistemas y diseño. He trabajado en Ciudad de Guatemala desde 2013, tanto en empresas como de forma independiente</p>
-              <a href="images/jd.mp4" class="da-link button" target="new" rel="noopener">Intro</a>
-              <div class="da-img">
-                <img src="images/jdmejia.png" width="" alt="jdmejia">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Ingeniería en Sistemas</h2>
-              <h4 style="color:gray; text-transform: none;">Desarrollo Web</h4>
-              <p>Carrera profesional que diseña, desarrolla, implementa y mantiene sistemas de información complejos, integrando software, hardware y personas para resolver problemas.</p>
-              <a href="https://leyes-de-newton.liveblog365.com/" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/Slider2025.png" width="" alt="image02">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño web</h2>
-              <h4 style="color:gray; text-transform: none;">Maquetación</h4>
-              <p>Es una actividad que consiste en la planificación, diseño, implementación y mantenimiento de sitios web. No es simplemente la implementación del diseño convencional ya que se abarcan diferentes aspectos como el diseño gráfico web.</p>
-              <a href="https://jdportafolio.netlify.app/pdf/Presentacion%20Final.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/Slider02.png" width="" alt="image02">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño Gráfico</h2>
-              <h4 style="color:gray; text-transform: none;">Creatividad</h4>
-              <p>Es una profesión cuya actividad consiste en proyectar comunicaciones visuales destinadas a transmitir mensajes específicos a grupos sociales, con objetivos determinados. Esta actividad ayuda a optimizar las comunicaciones gráficas.</p>
-              <a href="https://jdportafolio.netlify.app/pdf/Identidad%20Corporativa_Te%20de%20Pino.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/Slider01.png" alt="image01" width="">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Análisis de Datos</h2>
-              <h4 style="color:gray; text-transform: none;">Excel</h4>
-              <p>Es un proceso que consiste en inspeccionar, limpiar y transformar datos con el objetivo de resaltar información útil, lo que sugiere conclusiones, y apoyo en la toma de decisiones. Tiene múltiples facetas y enfoques.</p>
-              <a href="https://drive.google.com/open?id=1GXZh57CfN-z8mIExbzz_w7j1IUidXBAW" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/excel.gif" width="100%" height="110%" alt="jdmejia" class="excel">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño 3D</h2>
-              <h4 style="color:gray; text-transform: none;">Modelado Arquitectonico</h4>
-              <p>Satisfacer las demandas por espacios habitables, tanto en lo estético, como en lo tecnológico. Presenta soluciones técnicas, constructivas, para los proyectos de arquitectura. Entre los elementos a tener en cuenta para el diseño.</p>
-              <a href="https://jdportafolio.netlify.app/pdf/Proyecto_Final3D.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/Slider03.png" width="" alt="jdmejia">
-              </div>
-            </div>
-
-            <div class="da-slide">
-              <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Editor de Videos</h2>
-              <h4 style="color:gray; text-transform: none;">Intros</h4>
-              <p>La edición de vídeo es un proceso por el cual un editor coloca fragmentos de vídeo, fotografías, gráficos, audio, efectos digitales y cualquier otro material audiovisual en una cinta o un archivo informático.</p>
-              <a href="images/final.mp4" class="da-link button" target="new" rel="noopener">Ver más</a>
-              <div class="da-img">
-                <img src="images/video.gif" width="" alt="jdmejia" class="vid">
-              </div>
-            </div>
-
-            <div class="da-arrows" aria-label="Controles carrusel">
-              <span class="da-arrows-prev" role="button" tabindex="0" aria-label="Anterior"></span>
-              <span class="da-arrows-next" role="button" tabindex="0" aria-label="Siguiente"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </center>
-
-    <!-- Servicios -->
-    <div class="section primary-section" id="service">
-      <div class="container">
-        <div class="title">
-          <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #F2F2F2; font-family: arial black;">Estudios en Diseño 💪</h1>
-          <p style="color: white; text-align: center;">Soy Técnico Diseñador Gráfico, Web y Arquitectonico, tambien he estudiando Animación 3D.</p>
-        </div>
-        <div class="row-fluid">
-          <div class="span4">
-            <div class="centered service">
-              <div class="circle-border zoom-in">
-                <img class="img-circle zoomimg" src="images/Service1.png" alt="service 1">
-              </div>
-              <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño Gráfico</h3>
-              <p style="text-align: center;">Lo estudio en el año 2013 y 14, en Instituto Ceiba.</p>
-            </div>
-          </div>
-          <div class="span4">
-            <div class="centered service">
-              <div class="circle-border zoom-in">
-                <img class="img-circle zoomimg" src="images/Service2.png" alt="service 2">
-              </div>
-              <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño Web</h3>
-              <p style="text-align: center;">Lo estudio en el año 2015 y 16, en Centro Tics.</p>
-            </div>
-          </div>
-          <div class="span4">
-            <div class="centered service">
-              <div class="circle-border zoom-in">
-                <img class="img-circle zoomimg" src="images/Service3.png" alt="service 3">
-              </div>
-              <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño 3D</h3>
-              <p style="text-align: center;">Lo estudio en el año 2015 y 16, en Centro Tics.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portafolio -->
-    <div class="section secondary-section" id="portfolio">
-      <div class="triangle" aria-hidden="true"></div>
-      <div class="container">
-        <div class="title">
-          <h1 style="color:#2E2E2E; text-shadow: 0.05em 0.07em 0.1em #000; font-family: arial black;">Portafolio mediante Imágenes de mis Proyectos.</h1>
-          <p style="color:white; text-align: center">A continuación se representan una serie de renders donde se muestran mis propio diseños.</p>
-        </div>
-        <ul class="nav nav-pills" role="tablist">
-          <li class="filter" data-filter="all"><a href="#noAction">Bocetos</a></li>
-          <li class="filter" data-filter="web"><a href="#noAction">Digitales</a></li>
-          <li class="filter" data-filter="photo"><a href="#noAction">3D</a></li>
-          <li class="filter" data-filter="identity"><a href="#noAction">Arquitectonico</a></li>
-        </ul>
-
-        <div id="single-project">
-          <div id="slidingDiv" class="toggleDiv row-fluid single-project" aria-live="polite">
-            <div class="span6">
-              <img src="images/Portfolio01.png" alt="project 1">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Diseño Creativo</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño Gráfico</span>Creatividad</div>
-                  <div><span>Fecha</span>Enero 2016</div>
-                  <div><span>Concepto</span>Diseño creativo realizado con Photoshop.</div>
-                  <div><span>Función</span>Representación de ideas ante un cliente</div>
-                </div>
-                <p>Ideas que tengo, para posteriormente pasarlas a diseño digital mediante un programa determinado.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio02.png" alt="project 2">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Bocetos Varios 2</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño Gráfico</span>Proyecto de Revista</div>
-                  <div><span>Fecha</span>Mayo 2015</div>
-                  <div><span>Concepto</span>Dibujo para pasar a digital</div>
-                  <div><span>Función</span>Representación de ideas ante un cliente</div>
-                </div>
-                <p>Esos bocetos los elabore para tener una mejor idea, para posteriormente pasarlo a digital.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio03.png" alt="project 3">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Modelado y Maquetado 3D</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño 3D</span>Curso Técnico Autocad</div>
-                  <div><span>Fecha</span>Enero 2016</div>
-                  <div><span>Concepto</span>Renderizado de Maquetación</div>
-                  <div><span>Función</span>Representación de ideas ante un cliente</div>
-                </div>
-                <p>Fachada de casa, elevacion norte de renderizado y texturizado.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/jd.png" alt="project 4">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Diseño de Intro</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño Gráfico 3D</span>Intro de Página Web</div>
-                  <div><span>Fecha</span>Enero 2017</div>
-                  <div><span>Concepto</span>Creación de Intro de Página Web</div>
-                  <div><span>Función</span>Representación de ideas ante un cliente</div>
-                </div>
-                <p>Hice este diseño de una intro de mi página web, para usarla en esta como una forma de mostrar un diseño 2d en movimiento.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio05.png" alt="project 5">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>De Boceto a Digital 2</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño Gráfico</span>Proyecto de Empresa</div>
-                  <div><span>Fecha</span>Junio 2015</div>
-                  <div><span>Concepto</span>Dibujo para pasar a digital</div>
-                  <div><span>Función</span>Representación de ideas ante un cliente</div>
-                </div>
-                <p>Hice esto boceto como una idea, de la creación y la innovación de un nuevo producto, para posteriormente pasarlo a digital.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio06.png" alt="project 6">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>De Blanco y Negro a Color</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño Gráfico</span>Retoque Fotográfico</div>
-                  <div><span>Fecha</span>Abril 2015</div>
-                  <div><span>Concepto</span>Restauración de Fotográfia</div>
-                  <div><span>Función</span>Darle vida de nuevo a una imágen</div>
-                </div>
-                <p>La restauración de imágenes es una de las mejores herramientas que tiene el diseño gráfico, con esto se busca darle una nueva forma de ver una imágen.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio07.png" alt="project 7">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Maqueta Virtual</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño 3D</span>Maquetación 3D</div>
-                  <div><span>Fecha</span>Agosto 2015</div>
-                  <div><span>Concepto</span>Ver en forma como se verá el proyecto</div>
-                  <div><span>Función</span>Mostrar al cliente como se verá en construcción</div>
-                </div>
-                <p>La maquetación en 3D nos muestra como se verá el proyecto para su futura construcción, ya que se modela a escala real.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio08.png" alt="project 8">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Diseño Arquitectonico</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño 3D</span>Exterior e Iluminación</div>
-                  <div><span>Fecha</span>Octubre 2015</div>
-                  <div><span>Concepto</span>Ver en secciones como se verá el proyecto</div>
-                  <div><span>Función</span>Mostrar al cliente como se verá en construcción</div>
-                </div>
-                <p>La maquetación en 3D nos muestra como se verá el proyecto para su futura construcción, ya que se modela a escala real.</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
-            <div class="span6">
-              <img src="images/Portfolio09.png" alt="project 9">
-            </div>
-            <div class="span6">
-              <div class="project-description">
-                <div class="project-title clearfix">
-                  <h3>Animación 3D</h3>
-                  <span class="show_hide close" role="button" aria-label="Cerrar">
-                    <i class="icon-cancel" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <div><span>Diseño 3D</span>Render 3D</div>
-                  <div><span>Fecha</span>Junio 2016</div>
-                  <div><span>Concepto</span>Ver la texturización del modelado</div>
-                  <div><span>Función</span>Primera fase de la animación modelar para luego animar</div>
-                </div>
-                <p>La animación 3D, necesita de modelado, texturización, animación y la renderización de las imagenes.</p>
-              </div>
-            </div>
-          </div>
-
-          <ul id="portfolio-grid" class="thumbnails row">
-            <li class="span4 mix web">
-              <div class="thumbnail">
-                <img src="images/Portfolio01.png" alt="project 1">
-                <a href="#single-project" class="more show_hide" rel="#slidingDiv" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Diseño Creativo</h3>
-                <p style="text-align: center;">Diseño Gráfico</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix photo">
-              <div class="thumbnail">
-                <img src="images/Portfolio02.png" alt="project 2">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv1" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Bocetos Varios</h3>
-                <p style="text-align: center;">Diseño Gráfico</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix identity">
-              <div class="thumbnail">
-                <img src="images/Portfolio03.png" alt="project 3">
-                <a href="#single-project" class="more show_hide" rel="#slidingDiv2" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Bocetos Varios</h3>
-                <p style="text-align: center;">Diseño Gráfico</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix web">
-              <div class="thumbnail">
-                <img src="images/jd.png" alt="project 4">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv3" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Diseño de Intro</h3>
-                <p style="text-align: center;">Diseño Digital</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix photo">
-              <div class="thumbnail">
-                <img src="images/Portfolio05.png" alt="project 5">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv4" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>De Boceto a Digital</h3>
-                <p style="text-align: center;">Diseño Digital</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix identity">
-              <div class="thumbnail">
-                <img src="images/Portfolio06.png" alt="project 6">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv5" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Restauración de Imágenes</h3>
-                <p style="text-align: center;">Diseño Fotográfico</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix web">
-              <div class="thumbnail">
-                <img src="images/Portfolio07.png" alt="project 7">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv6" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Maquetación de Edificio</h3>
-                <p style="text-align: center;">Diseño Arquitectonico</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix photo">
-              <div class="thumbnail">
-                <img src="images/Portfolio08.png" alt="project 8">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv7" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Varias secciones del Exterior</h3>
-                <p style="text-align: center;">Diseño Arquitectonico.</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-            <li class="span4 mix identity">
-              <div class="thumbnail">
-                <img src="images/Portfolio09.png" alt="project 9">
-                <a href="#single-project" class="show_hide more" rel="#slidingDiv8" aria-label="Ver detalles">
-                  <i class="icon-plus" aria-hidden="true"></i>
-                </a>
-                <h3>Modelado 3D</h3>
-                <p style="text-align: center;">Animación y Diseño 3D</p>
-                <div class="mask"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- About -->
-    <div class="section primary-section" id="about">
-      <div class="triangle" aria-hidden="true"></div>
-      <div class="container">
-        <div class="title">
-          <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #fff; font-family: arial black;">Otros Diseños 📢</h1>
-          <p style="color:#fff; text-align: center;">La creatividad no tiene limites, tanto como los diseños son infinitos</p>
-        </div>
-        <div class="row-fluid team">
-          <div class="span4" id="first-person">
-            <div class="thumbnail" style="background:#181C1C">
-              <img class="color" src="images/Team1.png" alt="team 1">
-              <h3 style="color: white">Diseño Multimedia</h3>
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Diseño Logos</span>
-                  </a>
-                </li>
-                <li><a href="#"><span class=""></span></a></li>
-                <li><a href="#"><span class=""></span></a></li>
+            <a href="#" class="brand" aria-label="Inicio">
+              <img src="images/logo.png" width="120" height="40" alt="Logo" class="imglogo">
+            </a>
+            <!-- Botón de menú deshabilitado (no colapsa) -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" aria-label="Abrir menú">
+              <i class="icon-menu" aria-hidden="true"></i>
+            </button>
+            <div class="nav-collapse collapse pull-right show-always">
+              <ul class="nav" id="top-navigation">
+                <li class="active"><a href="#home">Inicio</a></li>
+                <li><a href="#service">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#about">Diseños</a></li>
+                <li><a href="#clients">Trabajos</a></li>
+                <li><a href="#price">Programas</a></li>
+                <li><a href="#contact">Contacto</a></li>
               </ul>
-              <div class="mask" style="background: black">
-                <h2 style="color: gray;">Logotipo</h2>
-                <p style="color: white">Está imagén se puede utilizar para foto de perfil en cualquier red social.</p>
-              </div>
-            </div>
-          </div>
-          <div class="span4" id="second-person">
-            <div class="thumbnail" style="background:#181C1C">
-              <img class="color" src="images/Team2.png" alt="team 1">
-              <h3 style="color: white">Diseño Multimedia</h3>
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Foto Color</span>
-                  </a>
-                </li>
-                <li><a href="#"><span class=""></span></a></li>
-                <li><a href="#"><span class=""></span></a></li>
-              </ul>
-              <div class="mask" style="background: black">
-                <h2 style="color: gray;">Fotografia de Blanco y negro a Color</h2>
-                <p style="color: white">Está imágen de estar desaturada se puede convertir a una imagen con colores más que vivos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="span4" id="third-person">
-            <div class="thumbnail" style="background:#181C1C">
-              <img class="color" src="images/Team3.png" alt="team 1">
-              <h3 style="color: white">Diseño Multimedia</h3>
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Diseño Interior</span>
-                  </a>
-                </li>
-                <li><a href="#"><span class=""></span></a></li>
-                <li><a href="#"><span class=""></span></a></li>
-              </ul>
-              <div class="mask" style="background: black">
-                <h2 style="color: gray">Diseño de Interior</h2>
-                <p style="color: white">El diseño de interior en un proyecto arquitectonico es combinar colores que tengan una combinación perfecta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-text centered">
-          <h3 style="color:#000; text-shadow: 0.02em 0.03em 0.05em gray; font-family: arial black;">Mis Diseños</h3>
-          <p style="text-align: justify;">
-            Siempre que ya tengo mi boceto elaborado, empiezo por redibujarlo con el programa Adobe Illustrator, posteriormente ya que lo he terminado lo exporto a Adobe Photoshop para colocarle el color y darle los efectos de sombra, entre otras cosas más.En Diseño Web al igual que en Diseño Gráfico, siempre empiezo con una plantilla como base, y en el transcurso voy modificando el diseño.
-          </p>
-        </div>
-        <h3 style="color:#000; text-shadow: 0.02em 0.03em 0.05em gray; font-family: arial black;">Medición de mi Conocimiento</h3>
-        <div class="row-fluid">
-          <div class="span6">
-            <ul class="skills" id="skills">
-              <li>
-                <span class="bar" data-width="90%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Diseño Gráfico Digital</h3>
-              </li>
-              <li>
-                <span class="bar" data-width="95%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Diseño Web y Redes Sociales</h3>
-              </li>
-              <li>
-                <span class="bar" data-width="95%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Análisis de Datos, Reportes y Excel</h3>
-              </li>
-              <li>
-                <span class="bar" data-width="85%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Edición de Video y Audio</h3>
-              </li>
-              <li>
-                <span class="bar" data-width="85%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Maquetación y Modelado 3D</h3>
-              </li>
-              <li>
-                <span class="bar" data-width="85%"></span>
-                <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Animación 2D Y 3D</h3>
-              </li>
-            </ul>
-          </div>
-          <div class="span6">
-            <div class="highlighted-box center">
-              <h1 style="color:#2E2E2E; text-shadow: 0.02em 0.03em 0.05em #000;">Software (Programas)</h1>
-              <p style="text-align: left;">
-                En el área de diseño existen una gran variedad de programas, los que yo he estudiado y precticado, son los de la Suite de Adobe, los utilizo tanto para el diseño gráfico como para el diseño web, ya en el diseño 3d utlizo los de la suite de Autodesk. En Diseño 3D lo utilizo como una herramienta diferente al diseño plano tradicional, pero para ello se debe de contar con una pc con grandes recursos. El análisis de datos trato de utilizarlo en todas las áreas de la computación ya que es algo necesario de saber para llevar un mejor control, utilizo Excel y sus herramientas, pero tambien uso otras aplicaciones especializadas para generar reportes y gran cantidad de datos.
-              </p>
-              <button class="button button-sp"><a href="https://juandiegomejiac.netlify.app" target="new" rel="noopener">JuanDiegoMejía</a></button>
-              <button class="button button-sp"><a href="http://webtienda.cf" target="new" rel="noopener">Tienda Online</a></button>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- CTA enlaces -->
-    <div class="section secondary-section2">
-      <!-- Corrige selector inválido .triangle 2 (se deja como simple contenedor visual) -->
-      <div class="triangle" aria-hidden="true"></div>
-      <div class="container centered">
-        <h2 style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Ingresa a este sitio web para ver más de mis diseños.</h2>
-        <a href="http://jdportafolio.ml" target="new" class="button b" rel="noopener">Portafolio</a>
-        <a href="https://tiendadigital.ga" target="new" class="button b" rel="noopener">Tienda Digital</a>
-        <a href="http://www.clinicamedica.ga" target="new" class="button b" rel="noopener">Ej Sitio Web</a>
+      <!-- Home -->
+      <center>
+        <div id="home" class="centro">
+          <div id="da-slider" class="da-slider" aria-label="Presentación">
+            <div class="triangle" aria-hidden="true"></div>
+            <div class="mask" aria-hidden="true"></div>
+            <div class="container">
+              <div class="da-slide">
+                <h2 class="fittext2" style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Bienvenidos a mi Sitio Web 😀</h2>
+                <h4 style="color:gray; text-transform: none;">Juan Diego Mejia Contreras</h4>
+                <p>Profesional de la informática con más de 10 años de experiencia en sistemas y diseño. He trabajado en Ciudad de Guatemala desde 2013, tanto en empresas como de forma independiente</p>
+                <a href="images/jd.mp4" class="da-link button" target="new" rel="noopener">Intro</a>
+                <div class="da-img">
+                  <img src="images/jdmejia.png" width="" alt="jdmejia">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Ingeniería en Sistemas</h2>
+                <h4 style="color:gray; text-transform: none;">Desarrollo Web</h4>
+                <p>Carrera profesional que diseña, desarrolla, implementa y mantiene sistemas de información complejos, integrando software, hardware y personas para resolver problemas.</p>
+                <a href="https://leyes-de-newton.liveblog365.com/" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/Slider2025.png" width="" alt="image02">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño web</h2>
+                <h4 style="color:gray; text-transform: none;">Maquetación</h4>
+                <p>Es una actividad que consiste en la planificación, diseño, implementación y mantenimiento de sitios web. No es simplemente la implementación del diseño convencional ya que se abarcan diferentes aspectos como el diseño gráfico web.</p>
+                <a href="https://jdportafolio.netlify.app/pdf/Presentacion%20Final.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/Slider02.png" width="" alt="image02">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño Gráfico</h2>
+                <h4 style="color:gray; text-transform: none;">Creatividad</h4>
+                <p>Es una profesión cuya actividad consiste en proyectar comunicaciones visuales destinadas a transmitir mensajes específicos a grupos sociales, con objetivos determinados. Esta actividad ayuda a optimizar las comunicaciones gráficas.</p>
+                <a href="https://jdportafolio.netlify.app/pdf/Identidad%20Corporativa_Te%20de%20Pino.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/Slider01.png" alt="image01" width="">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Análisis de Datos</h2>
+                <h4 style="color:gray; text-transform: none;">Excel</h4>
+                <p>Es un proceso que consiste en inspeccionar, limpiar y transformar datos con el objetivo de resaltar información útil, lo que sugiere conclusiones, y apoyo en la toma de decisiones. Tiene múltiples facetas y enfoques.</p>
+                <a href="https://drive.google.com/open?id=1GXZh57CfN-z8mIExbzz_w7j1IUidXBAW" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/excel.gif" width="100%" height="110%" alt="jdmejia" class="excel">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Diseño 3D</h2>
+                <h4 style="color:gray; text-transform: none;">Modelado Arquitectonico</h4>
+                <p>Satisfacer las demandas por espacios habitables, tanto en lo estético, como en lo tecnológico. Presenta soluciones técnicas, constructivas, para los proyectos de arquitectura. Entre los elementos a tener en cuenta para el diseño.</p>
+                <a href="https://jdportafolio.netlify.app/pdf/Proyecto_Final3D.pdf" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/Slider03.png" width="" alt="jdmejia">
+                </div>
+              </div>
+
+              <div class="da-slide">
+                <h2 style="color:#CFCFCF; text-shadow: 0.5px 5px 5px black; text-transform: none;">Editor de Videos</h2>
+                <h4 style="color:gray; text-transform: none;">Intros</h4>
+                <p>La edición de vídeo es un proceso por el cual un editor coloca fragmentos de vídeo, fotografías, gráficos, audio, efectos digitales y cualquier otro material audiovisual en una cinta o un archivo informático.</p>
+                <a href="images/final.mp4" class="da-link button" target="new" rel="noopener">Ver más</a>
+                <div class="da-img">
+                  <img src="images/video.gif" width="" alt="jdmejia" class="vid">
+                </div>
+              </div>
+
+              <div class="da-arrows" aria-label="Controles carrusel">
+                <span class="da-arrows-prev" role="button" tabindex="0" aria-label="Anterior"></span>
+                <span class="da-arrows-next" role="button" tabindex="0" aria-label="Siguiente"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+      <!-- Servicios -->
+      <div class="section primary-section" id="service">
+        <div class="container">
+          <div class="title">
+            <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #F2F2F2; font-family: arial black;">Estudios en Diseño 💪</h1>
+            <p style="color: white; text-align: center;">Soy Técnico Diseñador Gráfico, Web y Arquitectonico, tambien he estudiando Animación 3D.</p>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="centered service">
+                <div class="circle-border zoom-in">
+                  <img class="img-circle zoomimg" src="images/Service1.png" alt="service 1">
+                </div>
+                <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño Gráfico</h3>
+                <p style="text-align: center;">Lo estudio en el año 2013 y 14, en Instituto Ceiba.</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="centered service">
+                <div class="circle-border zoom-in">
+                  <img class="img-circle zoomimg" src="images/Service2.png" alt="service 2">
+                </div>
+                <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño Web</h3>
+                <p style="text-align: center;">Lo estudio en el año 2015 y 16, en Centro Tics.</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="centered service">
+                <div class="circle-border zoom-in">
+                  <img class="img-circle zoomimg" src="images/Service3.png" alt="service 3">
+                </div>
+                <h3 style="color:#2E2E2E; text-shadow: 0.001em 0.001em 0.001em #000; font-family: arial black;">Diseño 3D</h3>
+                <p style="text-align: center;">Lo estudio en el año 2015 y 16, en Centro Tics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Clients -->
-    <div id="clients">
-      <div class="section primary-section">
+      <!-- Portafolio -->
+      <div class="section secondary-section" id="portfolio">
         <div class="triangle" aria-hidden="true"></div>
         <div class="container">
           <div class="title">
-            <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #fff; font-family: arial black;">La Forma en que Trabajo 👍</h1>
-            <p style="color: white; text-align: center;">En el diseño hay varias formas de trabajar, en lo personal siempre trabajo de una misma manera.</p>
+            <h1 style="color:#2E2E2E; text-shadow: 0.05em 0.07em 0.1em #000; font-family: arial black;">Portafolio mediante Imágenes de mis Proyectos.</h1>
+            <p style="color:white; text-align: center">A continuación se representan una serie de renders donde se muestran mis propio diseños.</p>
           </div>
-          <div class="row">
-            <div class="span4">
-              <div class="testimonial">
-                <p>Mi forma de trabajar siempre va orientada a lado del cliente, en base a lo que el quiere, se verá enfocado mi diseño.</p>
-                <div class="whopic">
-                  <div class="arrow"></div>
-                  <img class="color" src="images/Client1.png" alt="client 1">
-                  <strong>Identidad
-                    <small>En Diseño</small>
-                  </strong>
-                </div>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="testimonial">
-                <p>El desarrollar nuevos conceptos de diseños, es siempre arriesgado ya que la creatividad es muy diferenete para las personas, por lo que encontrar una manera de poder ver que el diseño se vea bien para todos es muy dificil pero no imposible.</p>
-                <div class="whopic">
-                  <div class="arrow"></div>
-                  <img class="color" src="images/Client2.png" alt="client 2">
-                  <strong>Creatividad
-                    <small>En Diseño</small>
-                  </strong>
-                </div>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="testimonial">
-                <p>Con la creación de nuevos diseños se pretende una innovación para los clientes que buscan algo no tradicional, pero con identidad en lo que es el producto.</p>
-                <div class="whopic">
-                  <div class="arrow"></div>
-                  <img class="color" src="images/Client3.png" alt="client 3">
-                  <strong>Innovación
-                    <small>En Diseño</small>
-                  </strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="testimonial-text" style="text-align: left; color:#6E6E6E">
-            El Diseño es totalmente diferente dependiendo quien lo haga, nunca se podrá convencer a todo el mundo ya que este es muy complejo.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carrusel imágenes -->
-    <div class="section third-section">
-      <div class="container centered">
-        <div class="sub-section">
-          <div class="title clearfix">
-            <div class="pull-left">
-              <h2 style="color:#2E2E2E; text-shadow: 0.01em 0.01em 0.04em #000; font-family: arial black;">Renders en imágenes</h2>
-            </div>
-            <ul class="client-nav pull-right">
-              <li id="client-prev"></li>
-              <li id="client-next"></li>
-            </ul>
-          </div>
-          <ul class="row client-slider" id="clint-slider" aria-label="Galería de renders">
-            <li><img src="images/clients/ClientLogo01.png" alt="client logo 1" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo02.png" alt="client logo 2" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo03.png" alt="client logo 3" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo04.png" alt="client logo 4" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo05.png" alt="client logo 5" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo07.png" alt="client logo 7" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo08.png" alt="client logo 8" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo09.png" alt="client logo 9" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo10.png" alt="client logo 10" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo11.png" alt="client logo 11" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo12.png" alt="client logo 12" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo13.png" alt="client logo 13" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo14.png" alt="client logo 14" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo15.png" alt="client logo 15" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo16.png" alt="client logo 16" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo17.png" alt="client logo 17" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo18.png" alt="client logo 18" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo19.png" alt="client logo 19" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo20.png" alt="client logo 20" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo21.png" alt="client logo 21" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo22.png" alt="client logo 22" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo23.png" alt="client logo 23" class="imgzoom"></li>
-            <li><img src="images/clients/ClientLogo06.png" alt="client logo 6" class="imgzoom"></li>
+          <ul class="nav nav-pills" role="tablist">
+            <li class="filter" data-filter="all"><a href="#noAction">Bocetos</a></li>
+            <li class="filter" data-filter="web"><a href="#noAction">Digitales</a></li>
+            <li class="filter" data-filter="photo"><a href="#noAction">3D</a></li>
+            <li class="filter" data-filter="identity"><a href="#noAction">Arquitectonico</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
 
-    <!-- Programas -->
-    <div id="price" class="section secondary-section">
-      <div class="container">
-        <div class="title">
-          <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em gray; font-family: arial black;">Programas</h1>
-          <p style="color: white; text-align: center;">Estos son los software que más utlizo para el Área de Diseño.</p>
-        </div>
-        <div class="price-table row-fluid">
-          <div class="span4 price-column">
-            <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Gráfico Web</h3>
-            <ul class="list">
-              <li><strong>Photoshop</strong></li>
-              <li><strong>Illustrator</strong></li>
-              <li><strong>InDesing</strong></li>
-              <li><strong>Wordpress, Drupal</strong></li>
-              <li><strong>HTML5, CSS3, PHP</strong></li>
-            </ul>
-          </div>
-          <div class="span4 price-column">
-            <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Multimedia</h3>
-            <ul class="list">
-              <li><strong>Premier Pro</strong></li>
-              <li><strong>After Effecs</strong></li>
-              <li><strong>Audition</strong></li>
-              <li><strong>Crazy Animator</strong></li>
-              <li><strong>Video Scribe</strong></li>
-            </ul>
-          </div>
-          <div class="span4 price-column">
-            <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Diseño 3D</h3>
-            <ul class="list">
-              <li><strong>3D Max</strong></li>
-              <li><strong>Autocad</strong></li>
-              <li><strong>Revit</strong></li>
-              <li><strong>SketchUp</strong></li>
-              <li><strong>Civil 3D</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="centered">
-          <p class="price-text" style="color: white; text-align: center;">Estas son las herramientas que más he utlizado en el área de Diseño.</p>
-          <a href="http://portafoliocreativo.gq/sitio_natural_del_bosque/index.html" class="button b" target="new" rel="noopener">Página Web</a>
-          <a href="http://jdportafolio.ml/CambioDeEscenario/index.html" class="button b" target="new" rel="noopener">Presentación</a>
-          <a href="http://www.clinicamedica.cf" class="button b" target="new" rel="noopener">Ej Sitio Web</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="section third-section">
-      <div class="container newsletter">
-        <div class="sub-section">
-          <div class="title clearfix">
-            <div class="pull-left">
-              <h2 style="color:#2E2E2E; text-shadow: 0.01em 0.01em 0.04em #000; font-family: arial black;">Gracias por visitar esta Web 😂</h2>
+          <div id="single-project">
+            <div id="slidingDiv" class="toggleDiv row-fluid single-project" aria-live="polite">
+              <div class="span6">
+                <img src="images/Portfolio01.png" alt="project 1">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Diseño Creativo</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño Gráfico</span>Creatividad</div>
+                    <div><span>Fecha</span>Enero 2016</div>
+                    <div><span>Concepto</span>Diseño creativo realizado con Photoshop.</div>
+                    <div><span>Función</span>Representación de ideas ante un cliente</div>
+                  </div>
+                  <p>Ideas que tengo, para posteriormente pasarlas a diseño digital mediante un programa determinado.</p>
+                </div>
+              </div>
             </div>
+
+            <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio02.png" alt="project 2">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Bocetos Varios 2</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño Gráfico</span>Proyecto de Revista</div>
+                    <div><span>Fecha</span>Mayo 2015</div>
+                    <div><span>Concepto</span>Dibujo para pasar a digital</div>
+                    <div><span>Función</span>Representación de ideas ante un cliente</div>
+                  </div>
+                  <p>Esos bocetos los elabore para tener una mejor idea, para posteriormente pasarlo a digital.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio03.png" alt="project 3">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Modelado y Maquetado 3D</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño 3D</span>Curso Técnico Autocad</div>
+                    <div><span>Fecha</span>Enero 2016</div>
+                    <div><span>Concepto</span>Renderizado de Maquetación</div>
+                    <div><span>Función</span>Representación de ideas ante un cliente</div>
+                  </div>
+                  <p>Fachada de casa, elevacion norte de renderizado y texturizado.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/jd.png" alt="project 4">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Diseño de Intro</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño Gráfico 3D</span>Intro de Página Web</div>
+                    <div><span>Fecha</span>Enero 2017</div>
+                    <div><span>Concepto</span>Creación de Intro de Página Web</div>
+                    <div><span>Función</span>Representación de ideas ante un cliente</div>
+                  </div>
+                  <p>Hice este diseño de una intro de mi página web, para usarla en esta como una forma de mostrar un diseño 2d en movimiento.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio05.png" alt="project 5">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>De Boceto a Digital 2</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño Gráfico</span>Proyecto de Empresa</div>
+                    <div><span>Fecha</span>Junio 2015</div>
+                    <div><span>Concepto</span>Dibujo para pasar a digital</div>
+                    <div><span>Función</span>Representación de ideas ante un cliente</div>
+                  </div>
+                  <p>Hice esto boceto como una idea, de la creación y la innovación de un nuevo producto, para posteriormente pasarlo a digital.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio06.png" alt="project 6">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>De Blanco y Negro a Color</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño Gráfico</span>Retoque Fotográfico</div>
+                    <div><span>Fecha</span>Abril 2015</div>
+                    <div><span>Concepto</span>Restauración de Fotográfia</div>
+                    <div><span>Función</span>Darle vida de nuevo a una imágen</div>
+                  </div>
+                  <p>La restauración de imágenes es una de las mejores herramientas que tiene el diseño gráfico, con esto se busca darle una nueva forma de ver una imágen.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio07.png" alt="project 7">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Maqueta Virtual</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño 3D</span>Maquetación 3D</div>
+                    <div><span>Fecha</span>Agosto 2015</div>
+                    <div><span>Concepto</span>Ver en forma como se verá el proyecto</div>
+                    <div><span>Función</span>Mostrar al cliente como se verá en construcción</div>
+                  </div>
+                  <p>La maquetación en 3D nos muestra como se verá el proyecto para su futura construcción, ya que se modela a escala real.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio08.png" alt="project 8">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Diseño Arquitectonico</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño 3D</span>Exterior e Iluminación</div>
+                    <div><span>Fecha</span>Octubre 2015</div>
+                    <div><span>Concepto</span>Ver en secciones como se verá el proyecto</div>
+                    <div><span>Función</span>Mostrar al cliente como se verá en construcción</div>
+                  </div>
+                  <p>La maquetación en 3D nos muestra como se verá el proyecto para su futura construcción, ya que se modela a escala real.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+              <div class="span6">
+                <img src="images/Portfolio09.png" alt="project 9">
+              </div>
+              <div class="span6">
+                <div class="project-description">
+                  <div class="project-title clearfix">
+                    <h3>Animación 3D</h3>
+                    <span class="show_hide close" role="button" aria-label="Cerrar">
+                      <i class="icon-cancel" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <div><span>Diseño 3D</span>Render 3D</div>
+                    <div><span>Fecha</span>Junio 2016</div>
+                    <div><span>Concepto</span>Ver la texturización del modelado</div>
+                    <div><span>Función</span>Primera fase de la animación modelar para luego animar</div>
+                  </div>
+                  <p>La animación 3D, necesita de modelado, texturización, animación y la renderización de las imagenes.</p>
+                </div>
+              </div>
+            </div>
+
+            <ul id="portfolio-grid" class="thumbnails row">
+              <li class="span4 mix web">
+                <div class="thumbnail">
+                  <img src="images/Portfolio01.png" alt="project 1">
+                  <a href="#single-project" class="more show_hide" rel="#slidingDiv" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Diseño Creativo</h3>
+                  <p style="text-align: center;">Diseño Gráfico</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix photo">
+                <div class="thumbnail">
+                  <img src="images/Portfolio02.png" alt="project 2">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv1" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Bocetos Varios</h3>
+                  <p style="text-align: center;">Diseño Gráfico</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix identity">
+                <div class="thumbnail">
+                  <img src="images/Portfolio03.png" alt="project 3">
+                  <a href="#single-project" class="more show_hide" rel="#slidingDiv2" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Bocetos Varios</h3>
+                  <p style="text-align: center;">Diseño Gráfico</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix web">
+                <div class="thumbnail">
+                  <img src="images/jd.png" alt="project 4">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv3" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Diseño de Intro</h3>
+                  <p style="text-align: center;">Diseño Digital</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix photo">
+                <div class="thumbnail">
+                  <img src="images/Portfolio05.png" alt="project 5">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv4" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>De Boceto a Digital</h3>
+                  <p style="text-align: center;">Diseño Digital</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix identity">
+                <div class="thumbnail">
+                  <img src="images/Portfolio06.png" alt="project 6">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv5" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Restauración de Imágenes</h3>
+                  <p style="text-align: center;">Diseño Fotográfico</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix web">
+                <div class="thumbnail">
+                  <img src="images/Portfolio07.png" alt="project 7">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv6" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Maquetación de Edificio</h3>
+                  <p style="text-align: center;">Diseño Arquitectonico</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix photo">
+                <div class="thumbnail">
+                  <img src="images/Portfolio08.png" alt="project 8">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv7" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Varias secciones del Exterior</h3>
+                  <p style="text-align: center;">Diseño Arquitectonico.</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+              <li class="span4 mix identity">
+                <div class="thumbnail">
+                  <img src="images/Portfolio09.png" alt="project 9">
+                  <a href="#single-project" class="show_hide more" rel="#slidingDiv8" aria-label="Ver detalles">
+                    <i class="icon-plus" aria-hidden="true"></i>
+                  </a>
+                  <h3>Modelado 3D</h3>
+                  <p style="text-align: center;">Animación y Diseño 3D</p>
+                  <div class="mask"></div>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div id="success-subscribe" class="alert alert-success invisible">
-          <strong>Gracias por ver esta Web</strong>
-        </div>
-        <div class="row-fluid">
-          <div class="span5" style="width: 100%">
-            <p>En está página haz visto algunos de mis trabajos y la forma en que los hago, tengo muchos más proyectos para ver, visita las demas webs que están en algunos botones que a lo largo de toda la página encontrarás.</p>
-          </div>
-          <center>
-            <iframe id="carrusel" src="galeria/slide_galeria_carrusel.html" align="center" width="900" height="150" scrolling="no" name="Frame_Nombre" frameborder="0" title="Galería carrusel"></iframe>
-          </center>
         </div>
       </div>
-    </div>
 
-    <!-- Contacto -->
-    <div id="contact" class="contact">
-      <div class="section secondary-section">
+      <!-- About -->
+      <div class="section primary-section" id="about">
+        <div class="triangle" aria-hidden="true"></div>
         <div class="container">
           <div class="title">
-            <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em gray; font-family: arial black;">Formulario de Contacto 😎</h1>
-            <p style="color:#fff; text-align: center;">Ingresa tus datos en los campos correspondientes para estar en comunicación.</p>
+            <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #fff; font-family: arial black;">Otros Diseños 📢</h1>
+            <p style="color:#fff; text-align: center;">La creatividad no tiene limites, tanto como los diseños son infinitos</p>
           </div>
-        </div>
-        <div class="map-wrapper" aria-label="Multimedia">
-          <div>
-            <img src="php/gif.gif" class="map-canvas imggif" id="map-canvas" width="100%" height="100%" alt="animacion">
-          </div>
-          <div class="container">
-            <div class="row-fluid">
-              <div class="span5 contact-form centered" style="background-color:black; opacity: 0.7;">
-                <h3>Comunicate</h3>
-                <div id="successSend" class="alert alert-success invisible">
-                  <strong>Cual es tu Nombre</strong>Escribe tu Mensaje
+          <div class="row-fluid team">
+            <div class="span4" id="first-person">
+              <div class="thumbnail" style="background:#181C1C">
+                <img class="color" src="images/Team1.png" alt="team 1">
+                <h3 style="color: white">Diseño Multimedia</h3>
+                <ul class="social">
+                  <li>
+                    <a href="#">
+                      <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Diseño Logos</span>
+                    </a>
+                  </li>
+                  <li><a href="#"><span class=""></span></a></li>
+                  <li><a href="#"><span class=""></span></a></li>
+                </ul>
+                <div class="mask" style="background: black">
+                  <h2 style="color: gray;">Logotipo</h2>
+                  <p style="color: white">Está imagén se puede utilizar para foto de perfil en cualquier red social.</p>
                 </div>
-                <div id="errorSend" class="alert alert-error invisible">Hay un error</div>
-                <iframe src="https://juandiegomejiac.github.io/contact/" width="100%" height="340" scrolling="no" frameborder="0" title="Formulario de contacto"></iframe>
+              </div>
+            </div>
+            <div class="span4" id="second-person">
+              <div class="thumbnail" style="background:#181C1C">
+                <img class="color" src="images/Team2.png" alt="team 1">
+                <h3 style="color: white">Diseño Multimedia</h3>
+                <ul class="social">
+                  <li>
+                    <a href="#">
+                      <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Foto Color</span>
+                    </a>
+                  </li>
+                  <li><a href="#"><span class=""></span></a></li>
+                  <li><a href="#"><span class=""></span></a></li>
+                </ul>
+                <div class="mask" style="background: black">
+                  <h2 style="color: gray;">Fotografia de Blanco y negro a Color</h2>
+                  <p style="color: white">Está imágen de estar desaturada se puede convertir a una imagen con colores más que vivos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4" id="third-person">
+              <div class="thumbnail" style="background:#181C1C">
+                <img class="color" src="images/Team3.png" alt="team 1">
+                <h3 style="color: white">Diseño Multimedia</h3>
+                <ul class="social">
+                  <li>
+                    <a href="#">
+                      <span class="" style="color:#2E2E2E; text-shadow: 0.05em 0.03em 0.01em #000; font-family: arial black; text-align: center;">Diseño Interior</span>
+                    </a>
+                  </li>
+                  <li><a href="#"><span class=""></span></a></li>
+                  <li><a href="#"><span class=""></span></a></li>
+                </ul>
+                <div class="mask" style="background: black">
+                  <h2 style="color: gray">Diseño de Interior</h2>
+                  <p style="color: white">El diseño de interior en un proyecto arquitectonico es combinar colores que tengan una combinación perfecta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text centered">
+            <h3 style="color:#000; text-shadow: 0.02em 0.03em 0.05em gray; font-family: arial black;">Mis Diseños</h3>
+            <p style="text-align: justify;">
+              Siempre que ya tengo mi boceto elaborado, empiezo por redibujarlo con el programa Adobe Illustrator, posteriormente ya que lo he terminado lo exporto a Adobe Photoshop para colocarle el color y darle los efectos de sombra, entre otras cosas más.En Diseño Web al igual que en Diseño Gráfico, siempre empiezo con una plantilla como base, y en el transcurso voy modificando el diseño.
+            </p>
+          </div>
+          <h3 style="color:#000; text-shadow: 0.02em 0.03em 0.05em gray; font-family: arial black;">Medición de mi Conocimiento</h3>
+          <div class="row-fluid">
+            <div class="span6">
+              <ul class="skills" id="skills">
+                <li>
+                  <span class="bar" data-width="90%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Diseño Gráfico Digital</h3>
+                </li>
+                <li>
+                  <span class="bar" data-width="95%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Diseño Web y Redes Sociales</h3>
+                </li>
+                <li>
+                  <span class="bar" data-width="95%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Análisis de Datos, Reportes y Excel</h3>
+                </li>
+                <li>
+                  <span class="bar" data-width="85%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Edición de Video y Audio</h3>
+                </li>
+                <li>
+                  <span class="bar" data-width="85%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Maquetación y Modelado 3D</h3>
+                </li>
+                <li>
+                  <span class="bar" data-width="85%"></span>
+                  <h3 style="color:white; text-shadow: 0.01em 0.1em 0.01em black;">Animación 2D Y 3D</h3>
+                </li>
+              </ul>
+            </div>
+            <div class="span6">
+              <div class="highlighted-box center">
+                <h1 style="color:#2E2E2E; text-shadow: 0.02em 0.03em 0.05em #000;">Software (Programas)</h1>
+                <p style="text-align: left;">
+                  En el área de diseño existen una gran variedad de programas, los que yo he estudiado y precticado, son los de la Suite de Adobe, los utilizo tanto para el diseño gráfico como para el diseño web, ya en el diseño 3d utlizo los de la suite de Autodesk. En Diseño 3D lo utilizo como una herramienta diferente al diseño plano tradicional, pero para ello se debe de contar con una pc con grandes recursos. El análisis de datos trato de utilizarlo en todas las áreas de la computación ya que es algo necesario de saber para llevar un mejor control, utilizo Excel y sus herramientas, pero tambien uso otras aplicaciones especializadas para generar reportes y gran cantidad de datos.
+                </p>
+                <button class="button button-sp"><a href="https://juandiegomejiac.netlify.app" target="new" rel="noopener">JuanDiegoMejía</a></button>
+                <button class="button button-sp"><a href="http://webtienda.cf" target="new" rel="noopener">Tienda Online</a></button>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="span9 center contact-info">
-            <p style="text-align: center;">
-              <a href="https://www.youtube.com/watch?v=LABDZ6A0FnU" target="new" class="button b" rel="noopener">Intro Diseño</a>
-              <a href="https://jdportafolio.netlify.app" target="new" class="button b" rel="noopener">Portafolio Renders</a>
-              <a href="https://juandiegomejiac.netlify.app" target="new" class="button b" rel="noopener">Portafolio Creativo</a>
-            </p>
-            <div class="title cv">
-              <h2 class="cv"><a href="CV.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;"> Diseñador Multimedia</a></h2>
-              <h2 class="cv"><a href="galeria/doc.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Autodidacta</a></h2>
-              <h2 class="cv"><a href="galeria/ba.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Creativo</a></h2>
+      </div>
+
+      <!-- CTA enlaces -->
+      <div class="section secondary-section2">
+        <div class="triangle" aria-hidden="true"></div>
+        <div class="container centered">
+          <h2 style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Ingresa a este sitio web para ver más de mis diseños.</h2>
+          <a href="http://jdportafolio.ml" target="new" class="button b" rel="noopener">Portafolio</a>
+          <a href="https://tiendadigital.ga" target="new" class="button b" rel="noopener">Tienda Digital</a>
+          <a href="http://www.clinicamedica.ga" target="new" class="button b" rel="noopener">Ej Sitio Web</a>
+        </div>
+      </div>
+
+      <!-- Clients -->
+      <div id="clients">
+        <div class="section primary-section">
+          <div class="triangle" aria-hidden="true"></div>
+          <div class="container">
+            <div class="title">
+              <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em #fff; font-family: arial black;">La Forma en que Trabajo 👍</h1>
+              <p style="color: white; text-align: center;">En el diseño hay varias formas de trabajar, en lo personal siempre trabajo de una misma manera.</p>
             </div>
+            <div class="row">
+              <div class="span4">
+                <div class="testimonial">
+                  <p>Mi forma de trabajar siempre va orientada a lado del cliente, en base a lo que el quiere, se verá enfocado mi diseño.</p>
+                  <div class="whopic">
+                    <div class="arrow"></div>
+                    <img class="color" src="images/Client1.png" alt="client 1">
+                    <strong>Identidad
+                      <small>En Diseño</small>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="testimonial">
+                  <p>El desarrollar nuevos conceptos de diseños, es siempre arriesgado ya que la creatividad es muy diferenete para las personas, por lo que encontrar una manera de poder ver que el diseño se vea bien para todos es muy dificil pero no imposible.</p>
+                  <div class="whopic">
+                    <div class="arrow"></div>
+                    <img class="color" src="images/Client2.png" alt="client 2">
+                    <strong>Creatividad
+                      <small>En Diseño</small>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="testimonial">
+                  <p>Con la creación de nuevos diseños se pretende una innovación para los clientes que buscan algo no tradicional, pero con identidad en lo que es el producto.</p>
+                  <div class="whopic">
+                    <div class="arrow"></div>
+                    <img class="color" src="images/Client3.png" alt="client 3">
+                    <strong>Innovación
+                      <small>En Diseño</small>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text" style="text-align: left; color:#6E6E6E">
+              El Diseño es totalmente diferente dependiendo quien lo haga, nunca se podrá convencer a todo el mundo ya que este es muy complejo.
+            </p>
           </div>
-          <div class="row-fluid centered">
-            <ul class="social" style="opacity: 0.1">
-              <li><a href="https://www.facebook.com/jdiegomejiac" target="new" rel="noopener" aria-label="Facebook"><span class="icon-facebook-circled"></span></a></li>
-              <li><a href="https://www.linkedin.com/in/jdiegomejiac/" target="new" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin-circled"></span></a></li>
-              <li><a href="https://twitter.com/jdiegomejiac" target="new" rel="noopener" aria-label="Twitter"><span class="icon-twitter-circled"></span></a></li>
-              <li><a href="enviar/index.html" target="new" rel="noopener" aria-label="Pinterest"><span class="icon-pinterest-circled"></span></a></li>
-              <li><a href="form/index.html" target="new" rel="noopener" aria-label="Dribbble"><span class="icon-dribbble-circled"></span></a></li>
-              <li><a href="images/2d.html" target="new" rel="noopener" aria-label="Google Plus"><span class="icon-gplus-circled"></span></a></li>
+        </div>
+      </div>
+
+      <!-- Carrusel imágenes -->
+      <div class="section third-section">
+        <div class="container centered">
+          <div class="sub-section">
+            <div class="title clearfix">
+              <div class="pull-left">
+                <h2 style="color:#2E2E2E; text-shadow: 0.01em 0.01em 0.04em #000; font-family: arial black;">Renders en imágenes</h2>
+              </div>
+              <ul class="client-nav pull-right">
+                <li id="client-prev"></li>
+                <li id="client-next"></li>
+              </ul>
+            </div>
+            <ul class="row client-slider" id="clint-slider" aria-label="Galería de renders">
+              <li><img src="images/clients/ClientLogo01.png" alt="client logo 1" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo02.png" alt="client logo 2" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo03.png" alt="client logo 3" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo04.png" alt="client logo 4" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo05.png" alt="client logo 5" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo07.png" alt="client logo 7" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo08.png" alt="client logo 8" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo09.png" alt="client logo 9" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo10.png" alt="client logo 10" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo11.png" alt="client logo 11" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo12.png" alt="client logo 12" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo13.png" alt="client logo 13" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo14.png" alt="client logo 14" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo15.png" alt="client logo 15" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo16.png" alt="client logo 16" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo17.png" alt="client logo 17" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo18.png" alt="client logo 18" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo19.png" alt="client logo 19" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo20.png" alt="client logo 20" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo21.png" alt="client logo 21" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo22.png" alt="client logo 22" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo23.png" alt="client logo 23" class="imgzoom"></li>
+              <li><img src="images/clients/ClientLogo06.png" alt="client logo 6" class="imgzoom"></li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <p style="color:gray; text-align: center; font-weight: bold;">©JDiego Mejía, Guatemala 2025.👊</p>
-    </div>
+      <!-- Programas -->
+      <div id="price" class="section secondary-section">
+        <div class="container">
+          <div class="title">
+            <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em gray; font-family: arial black;">Programas</h1>
+            <p style="color: white; text-align: center;">Estos son los software que más utlizo para el Área de Diseño.</p>
+          </div>
+          <div class="price-table row-fluid">
+            <div class="span4 price-column">
+              <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Gráfico Web</h3>
+              <ul class="list">
+                <li><strong>Photoshop</strong></li>
+                <li><strong>Illustrator</strong></li>
+                <li><strong>InDesing</strong></li>
+                <li><strong>Wordpress, Drupal</strong></li>
+                <li><strong>HTML5, CSS3, PHP</strong></li>
+              </ul>
+            </div>
+            <div class="span4 price-column">
+              <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Multimedia</h3>
+              <ul class="list">
+                <li><strong>Premier Pro</strong></li>
+                <li><strong>After Effecs</strong></li>
+                <li><strong>Audition</strong></li>
+                <li><strong>Crazy Animator</strong></li>
+                <li><strong>Video Scribe</strong></li>
+              </ul>
+            </div>
+            <div class="span4 price-column">
+              <h3 style="color:#000; text-shadow: 0.02em 0.01em 0.06em gray; font-family: arial black;">Diseño 3D</h3>
+              <ul class="list">
+                <li><strong>3D Max</strong></li>
+                <li><strong>Autocad</strong></li>
+                <li><strong>Revit</strong></li>
+                <li><strong>SketchUp</strong></li>
+                <li><strong>Civil 3D</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="centered">
+            <p class="price-text" style="color: white; text-align: center;">Estas son las herramientas que más he utlizado en el área de Diseño.</p>
+            <a href="http://portafoliocreativo.gq/sitio_natural_del_bosque/index.html" class="button b" target="new" rel="noopener">Página Web</a>
+            <a href="http://jdportafolio.ml/CambioDeEscenario/index.html" class="button b" target="new" rel="noopener">Presentación</a>
+            <a href="http://www.clinicamedica.cf" class="button b" target="new" rel="noopener">Ej Sitio Web</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- ScrollUp -->
-    <div class="scrollup">
-      <a href="#" aria-label="Volver arriba">
-        <i class="icon-up-open" aria-hidden="true"></i>
-      </a>
-    </div>
+      <!-- Newsletter -->
+      <div class="section third-section">
+        <div class="container newsletter">
+          <div class="sub-section">
+            <div class="title clearfix">
+              <div class="pull-left">
+                <h2 style="color:#2E2E2E; text-shadow: 0.01em 0.01em 0.04em #000; font-family: arial black;">Gracias por visitar esta Web 😂</h2>
+              </div>
+            </div>
+          </div>
+          <div id="success-subscribe" class="alert alert-success invisible">
+            <strong>Gracias por ver esta Web</strong>
+          </div>
+          <div class="row-fluid">
+            <div class="span5" style="width: 100%">
+              <p>En está página haz visto algunos de mis trabajos y la forma en que los hago, tengo muchos más proyectos para ver, visita las demas webs que están en algunos botones que a lo largo de toda la página encontrarás.</p>
+            </div>
+            <center>
+              <!-- Reemplazo: contenedor con scroll en vez de iframe para mantener ancho fijo -->
+              <div class="carrusel-contenedor" role="region" aria-label="Galería carrusel">
+                <iframe id="carrusel" src="galeria/slide_galeria_carrusel.html" align="center" width="900" height="150" scrolling="no" name="Frame_Nombre" frameborder="0" title="Galería carrusel"></iframe>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div id="contact" class="contact">
+        <div class="section secondary-section">
+          <div class="container">
+            <div class="title">
+              <h1 style="color:#000; text-shadow: 0.01em 0.01em 0.04em gray; font-family: arial black;">Formulario de Contacto 😎</h1>
+              <p style="color:#fff; text-align: center;">Ingresa tus datos en los campos correspondientes para estar en comunicación.</p>
+            </div>
+          </div>
+          <div class="map-wrapper" aria-label="Multimedia">
+            <div>
+              <img src="php/gif.gif" class="map-canvas imggif" id="map-canvas" width="100%" height="100%" alt="animacion">
+            </div>
+            <div class="container">
+              <div class="row-fluid">
+                <div class="span5 contact-form centered" style="background-color:black; opacity: 0.7;">
+                  <h3>Comunicate</h3>
+                  <div id="successSend" class="alert alert-success invisible">
+                    <strong>Cual es tu Nombre</strong>Escribe tu Mensaje
+                  </div>
+                  <div id="errorSend" class="alert alert-error invisible">Hay un error</div>
+                  <iframe src="https://juandiegomejiac.github.io/contact/" width="100%" height="340" scrolling="no" frameborder="0" title="Formulario de contacto"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="span9 center contact-info">
+              <p style="text-align: center;">
+                <a href="https://www.youtube.com/watch?v=LABDZ6A0FnU" target="new" class="button b" rel="noopener">Intro Diseño</a>
+                <a href="https://jdportafolio.netlify.app" target="new" class="button b" rel="noopener">Portafolio Renders</a>
+                <a href="https://juandiegomejiac.netlify.app" target="new" class="button b" rel="noopener">Portafolio Creativo</a>
+              </p>
+              <div class="title cv">
+                <h2 class="cv"><a href="CV.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;"> Diseñador Multimedia</a></h2>
+                <h2 class="cv"><a href="galeria/doc.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Autodidacta</a></h2>
+                <h2 class="cv"><a href="galeria/ba.pdf" class="cv" target="new" rel="noopener" style="color:#2E2E2E; text-shadow: 0.05em 0.05em 0.09em #000; font-family: arial black;">Creativo</a></h2>
+              </div>
+            </div>
+            <div class="row-fluid centered">
+              <ul class="social" style="opacity: 0.1">
+                <li><a href="https://www.facebook.com/jdiegomejiac" target="new" rel="noopener" aria-label="Facebook"><span class="icon-facebook-circled"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/jdiegomejiac/" target="new" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin-circled"></span></a></li>
+                <li><a href="https://twitter.com/jdiegomejiac" target="new" rel="noopener" aria-label="Twitter"><span class="icon-twitter-circled"></span></a></li>
+                <li><a href="enviar/index.html" target="new" rel="noopener" aria-label="Pinterest"><span class="icon-pinterest-circled"></span></a></li>
+                <li><a href="form/index.html" target="new" rel="noopener" aria-label="Dribbble"><span class="icon-dribbble-circled"></span></a></li>
+                <li><a href="images/2d.html" target="new" rel="noopener" aria-label="Google Plus"><span class="icon-gplus-circled"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p style="color:gray; text-align: center; font-weight: bold;">©JDiego Mejía, Guatemala 2025.👊</p>
+      </div>
+
+      <!-- ScrollUp -->
+      <div class="scrollup">
+        <a href="#" aria-label="Volver arriba">
+          <i class="icon-up-open" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div><!-- /#fixed-canvas -->
 
     <!-- JS locales -->
     <script src="js/jquery.js"></script>
@@ -963,7 +976,7 @@
       <source src="galeria/tono.mp3" type="audio/mp3">
     </audio>
 
-    <!-- Mejora mínima: animar barras de skills al entrar en vista si jquery.inview está presente -->
+    <!-- Animación barras skills -->
     <script>
       (function ($) {
         $(function () {
@@ -978,13 +991,8 @@
               }
             });
           }
-          if ($.fn.on && $.fn.one && $bars.length) {
-            $('.skills').one('inview', function (e, visible) {
-              if (visible) fillBars();
-            });
-            // fallback si inview no dispara
-            setTimeout(fillBars, 1200);
-          }
+          // Llenar siempre (sin depender de inview) para layout fijo
+          fillBars();
         });
       })(jQuery);
     </script>
