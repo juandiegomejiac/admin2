@@ -1089,3 +1089,34 @@ p {
         margin-top:30px;
     }
 }
+
+
+
+@media (max-width: 979px) {
+    /* 1. Destruimos cualquier borde, sombra o línea heredada en las secciones colindantes */
+    #home, 
+    #da-slider, 
+    #service {
+        border-bottom: none !important;
+        border-top: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    
+    /* 2. Si hay algún <hr> invisible generado por Bootstrap, lo ocultamos */
+    #home hr, 
+    #da-slider hr, 
+    #service hr {
+        display: none !important;
+    }
+
+    /* 3. El truco maestro para el "gap" de 1 píxel: 
+          Forzamos el fondo negro y subimos la sección de abajo exactamente 1px 
+          para que se solapen y no dejen pasar luz/color de fondo. */
+    #home {
+        background-color: #000000 !important;
+    }
+    #service {
+        margin-top: -1px !important;
+    }
+}
