@@ -1089,16 +1089,14 @@ p {
         margin-top:30px;
     }
 }
-/* Contenedor que mantiene la proporción 16:9 */
 .video-responsive {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 67.57%; 
     height: 0;
     overflow: hidden;
 }
 
-/* El iframe se adapta al 100% de su contenedor */
 .video-responsive iframe {
     position: absolute;
     top: 0;
